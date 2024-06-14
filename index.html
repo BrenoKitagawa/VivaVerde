@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>VidaVerde</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/4321036ed3.js" crossorigin="anonymous"></script>
+
+
+<link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header id="header">
+        <div id="container-header">
+           <div id="logo">
+            <a href="#inicio"><img src="logo/Logo_ajustado.png" alt="logo"></a>
+           </div> 
+            <nav id="container-nav">
+                <ul id="nav">
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#reciclagem">RECICLAGEM</a></li>
+                    <li><a href="#destino">DESTINO/PERIGOS</a></li>
+                    <li><a href="#impactos">IMPACTOS/MELHORIAS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <label class="hamburger">
+        <input type="checkbox" id="hamburger">
+        <svg viewBox="0 0 32 32">
+          <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+
+
+    <main>
+        <section id="inicio">
+            <div id="container-inicio" class="hidden pagina">   
+                <h1>RECICLAGEM</h1>
+                <h3>Reciclar é nos proteger de nossa própria devastação!
+                </h3>
+                <p>Nós entendemos como lixo tudo aquilo que é material mas que já não possui mais alguma utilidade, sendo então, descartado. Vivemos hoje numa realidade onde existem diversas categorias de lixo, que definem o seu destino, auxiliando na coleta seletiva e construindo um futuro melhor para saúde de todos e a conservação do meio ambiente.</p>
+            </div>
+
+            <div id="container-img" class="hidden pagina">
+                <img data-tilt src="imgs/garrafaPet.webp" alt="reciclagem logo" >
+            </div>
+        </section>
+
+        <section id="sobre"> 
+            <h1>SOBRE</h1>
+            <div id="container-sobre">
+                 <div id="sobre-text">
+                    <h1>Proposito</h1>
+                    <p>VivaVerde é um site programado por Breno Kitagawa e Marcelo Cardoso, alunos do curso de Análise e Desenvolvimento de Sistemas na Instituição Educacional Senac – Maringá. O site possui como objetivo a propagação de informações construtivas a respeito de descarte consciente, promovendo como principal tema a reciclagem. Ele busca semear a ideia dos benefícios da coleta seletiva como um bem comum que pode ser praticado por todos em qualquer lugar. Também é um informativo de como a falta das práticas recomendadas pode afetar nosso mundo.</p>
+ 
+                </div>
+                 <div id="sobre-img" class="hidden pagina"><img data-tilt src="imgs/Senac_logo 1.svg" alt="senac logo"></div>
+
+            </div>
+        </section>
+
+        <section id="reciclagem">
+            <h1>RECICLAGEM</h1>
+            <p>Os itens possuem categoria de reciclagem pois os materiais que compõem essa categoria têm um valor econômico grande e que podem ser reutilizados, reduzindo a quantidade de lixo enviado ao aterro sanitário e com isso, melhorando o meio ambiente. É importante separar corretamente os itens recicláveis para facilitar o sistema de coleta. O lixo reciclável possui alguns tipos veja suas lixeiras a seguir e o que a reciclagem ajuda em cada material.</p>
+            <div id="container-reciclagem" class="hidden pagina">
+                <div id="container-imgs">
+                    <div class="conteudo-img">
+                        <div class="img-reciclagem"> 
+                            <img src="imgs/lixeira_metal.svg"alt="lixeira de metal">   
+
+                            <div class="conteudo-reciclagem">
+                                <h1>Lixeira de metal</h1>
+                                <h2>Cor da lixeira <span style="--lixeira_cor : yellow">amarelo</span></h2>
+                                <p>A reciclagem do metal evita a retirada de minérios do solo, minimizando o impacto ambiental acarretado pela atividade mineradora, além de reduzir em muito o volume de água e energia necessárias para a produção de novos artigos.</p>
+
+                                <p class="reciclavel"><span style="--reciclavel:green">Metais que podem ser reciclados</span>: Latas de bebidas e alimentos, tampas de recipientes de vidro, latas de biscoito, bandejas e panelas, ferragens, grampos, fios elétricos, chapas, embalagens de marmitex, alumínio, cobre, aço e latas de produtos de limpeza.</p>
+
+                                <p class="nao_reciclavel"><span style="--nao_reciclavel:red">Metais que NÃO podem ser reciclados</span>: Latas de aerossóis, latas de tinta, pilhas, latas de inseticida e latas de pesticida.</p>
+
+
+                             </div>
+                        
+                        </div>
+                       
+                    </div>
+                    <div class="conteudo-img">
+                        <div class="img-reciclagem">
+                            <img src="imgs/lixeira_papel.svg" alt="lixeira de papel">
+
+                            <div class="conteudo-reciclagem">
+                                <h1>Lixeira de papel</h1>
+                                <h2>Cor da lixeira <span style="--lixeira_cor : blue">azul</span></h2>
+
+                                <p>A reciclagem do papel se torna um processo importante tanto pela preservação das árvores e diminuição dos problemas ambientais causados pela fabricação de papéis novos, quanto pelo aproveitamento dos papéis já utilizados que seriam jogados fora poluindo o meio ambiente.</p>
+
+                                
+
+                                <p class="reciclavel"><span style="--reciclavel:green">Papéis que podem ser reciclados</span>: Jornais, papéis de computador, sacos de papel, papéis de escritório e cadernos.</p>
+
+                                <p class="nao_reciclavel"><span style="--nao_reciclavel:red">Papéis que NÃO podem ser reciclados</span>: Papéis engordurados, carbonos, celofanes; papéis plastificados e papéis parafinados (fax).</p>
+
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                    <div class="conteudo-img" >
+                        <div class="img-reciclagem">
+                            <img src="imgs/lixeira_plastico.svg" alt="lixeira de plastico">
+
+                              <div class="conteudo-reciclagem">
+                                <h1>Lixeira de plastico</h1>
+                                <h2>Cor da lixeira <span style="--lixeira_cor : red">vermelho</span></h2>
+
+                                <p>O plástico é um material proveniente de resinas geralmente sintéticas e derivadas do petróleo. Com a reciclagem de plásticos poupa-se a extração de combustíveis fósseis que são esgotáveis. Ambientalmente o uso do plástico é considerado problemático pela sua alta durabilidade e grande volume na composição total do lixo.</p>
+
+                                <p class="reciclavel"><span style="--reciclavel:green">Plásticos que podem ser reciclados</span>: Embalagens de alimentos, embalagens de produtos de beleza, embalagens de produtos de limpeza, tampas, brinquedos, peças plásticas, canetas esferográficas, escovas de dente, baldes e artigos de cozinha.</p>
+
+                                <p class="nao_reciclavel"><span style="--nao_reciclavel:red">Plásticos que NÃO podem ser reciclados</span>: Celofanes, embalagens a vácuo, fraldas descartáveis, adesivos, embalagens engorduradas e siliconados.</p>
+                              </div>
+
+                            </div>
+                      
+                    </div>
+                    <div class="conteudo-img">
+                        <div class="img-reciclagem" >
+                            <img src="imgs/lixeira_vidro.svg" alt="lixeira de vidro">
+
+                            <div class="conteudo-reciclagem">
+                                <h1>Lixeira de vidro</h1>
+                                <h2>Cor da lixeira <span style="--lixeira_cor : green">verde</span></h2>
+                                <p>O vidro é um produto inorgânico que possui características modernas e versáteis, permitindo total liberdade de utilização, sendo a única matéria prima 100% reciclável. A reciclagem do vidro vem se tornando uma prática em nossa sociedade.</p>
+
+                                <p class="reciclavel"><span style="--reciclavel:green">Vidros que podem ser reciclados</span>: Copos, frascos de remédio, jarras, garrafas e vidros coloridos.</p>
+
+                                <p class="nao_reciclavel"><span style="--nao_reciclavel:red">Vidros que NÃO podem ser reciclados</span>: Vidros de automóvel, vidros de janelas, pirex, espelhos, tubos de TV, lâmpadas, óculos, cristais, ampolas de medicamentos, vidros temperados planos ou de utensílios domésticos.</p>
+                            </div>
+                        
+                        </div>
+
+                    
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div id="container_outros_lixos">
+            <h3>Outros tipos de Lixos</h3>
+            <p>Entre os lixos reciclaveis temos outros tipos de lixos veja a seguir:</p>
+                <div id="outros_lixos">
+
+            <p class="hidden pagina"><span style="--outros_lixos:#bff1ce">Lixo orgânico</span> <br> Ele é descartado principalmente em residências e estabelecimentos comerciais, o lixo orgânico é composto basicamente por restos de alimento. Este tipo de lixo deve ser separado dos demais, pois costuma ser destinado a aterros sanitários.</p>
+            
+            <p class="hidden pagina"><span style="--outros_lixos:#f00a5e">Lixo doméstico</span><br>  Também chamado de lixo domiciliar, refere-se ao material gerado em residências e inclui resíduos orgânicos e embalagens, entre outros.</p>
+
+            <p class="hidden pagina"><span style="--outros_lixos:grey">Lixo comercial</span><br>  É o lixo descartado em estabelecimentos comerciais, como lojas, restaurantes e bancos. É formado principalmente por embalagens, plásticos, restos de alimentos e caixas de papelão.</p>
+
+            <p class="hidden pagina"><span style="--outros_lixos:#172a38">Lixo industrial</span><br>  Resíduos originados em indústrias, normalmente compostos de sobras de matérias-primas. Este lixo pode ser encaminhado à reciclagem ou reutilizado pelas próprias indústrias. Exemplos: sobras de metal, vidro, tecidos, plásticos, borrachas.</p>
+
+            <p class="hidden pagina"><span style="--outros_lixos:red">Lixo hospitalar</span> <br> Este tipo de lixo deve ser encaminhado a empresas especializadas, pois pode ser perigoso para a saúde de quem entrar em contato com ele. Seringas, medicamentos, fraldas, sondas e materiais cirúrgicos são exemplos de lixo hospitalar.</p>
+
+            <p class="hidden pagina"><span style="--outros_lixos:#90ff17">Lixo verde</span><br>  Resultado da poda de árvores ou do recolhimento de folhas nas ruas. Por ser orgânico, pode ser utilizado para compostagem.</p>
+
+
+            <p class="hidden pagina"><span style="--outros_lixos:grey">Lixo eletrônico</span> <br> Um dos grandes desafios atuais é o destino do lixo eletrônico, que contém metais como ouro, cobre, alumínio e outros materiais. É gerado pelo descarte de eletrônicos que entraram em desuso. Entre os exemplos estão TVs, rádios, computadores e telefones.</p>
+
+
+            <p class="hidden pagina"><span style="--outros_lixos:yellow">Lixo radioativo</span><br>  Extremamente perigoso, este lixo é composto por material radioativo, como sobras de urânio de usinas nucleares e elementos que compõem aparelhos de raios-X. Deve ser tratado por empresas especializadas.</p>
+            </div>
+        </div>
+
+        </section>
+
+        <section id="destino"> 
+            <h1>Destino do lixo</h1>
+            <div id="conteudo_destino">
+                <div id="conteudo_destino_primeiro">
+                 <div id="lado_esquerdo_destino"> 
+                    <img class="hidden pagina" src="imgs/LixoResidencial.avif" alt="">
+                    <p> Quando falamos destino de lixo, O descarte correto do lixo é crucial, especialmente o doméstico, que é produzido constantemente. Quantidades enormes de resíduos são despejadas diariamente, mas a preocupação é se isso está sendo feito adequadamente. O descarte inadequado contamina solo, água e ar, provocando danos ambientais e enchentes devido à obstrução de canais de drenagem. Além do impacto estético, o lixo orgânico atrai pragas como ratos e mosquitos, que espalham doenças. A cidade de Maringá, por exemplo, enfrenta um surto de dengue devido ao acúmulo de lixo. A educação ambiental precisa ser valorizada e disseminada para combater esses problemas.</p>
+                        
+                        </div>
+                </div>
+                <div id="conteudo_destino_segundo">
+                    <h1>Então como descartamos cada categoria de lixo</h1>
+                    <div id="lado_direito_destino">
+                        <div class="destino">
+                            <h3> Resíduos orgânicos</h3>
+                            <img src="https://images.unsplash.com/photo-1553787434-45e1d245bfbb?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <p class="desativado">Os resíduos orgânicos, se a compostagem não foi uma opção praticada, deve ser encaminhado para o depósito em instalações adequadas, isto é, os aterros. Estão inclusos nessa categoria restos de alimentos, cascas de frutas e vegetais e entre outros objetos biodegradáveis.
+                            </p>
+                            <button class="ler">Saiba mais</button>
+                        </div>
+                        <div class="destino">
+                            <h3>Resíduos recicláveis</h3>
+                            <img src="https://www.reciclasampa.com.br/imgs/conteudos/14_guia_absolutamente_completo_da_reciclagem_full_02.jpg" alt="">
+                            <p class="desativado">Os resíduos recicláveis devem estar separados dos não recicláveis, também devem ser limpos pois qualquer risco contaminante deve ser evitado. Verificar cada tipo de material reciclável para depositá-los nos recipientes adequados. Dentre os materiais, papel e papelão, plástico, vidro e metal são objetos que se encaixam nessa categoria.
+                            </p>
+                            <button class="ler">Saiba mais</button>
+                        </div>
+                        <div class="destino">
+                            <h3>Resíduos eletrônicos</h3>
+                            <img src="https://www.insper.edu.br/wp-content/uploads/2022/08/Lixo-eletronico-2-shutterstock_1011557155.jpeg" alt="">
+                            <p class="desativado" style="overflow-y: auto;">Os resíduos eletrônicos, deve haver primeiro uma pesquisa para detectar se há algum local próximo para a realização do descarte do lixo eletrônico, algumas comunidades possuem diretrizes próprias. Antes de realizar o descarte, verifique se o dispositivo ainda é funcional, se for, considere revendê-lo ou doá-lo ou invés de descartá-lo. Tendo esses passos realizados, nós precisamos identificar um ponto de descarte próximo, às vezes lojas, fábricas e órgãos públicos realizam essa coleta ou estão abertos para receber a demanda. Mais alguns detalhes, se for possível, é bom separar os componentes individuais antes de descartá-los, isso é claro, se o objeto em questão tiver propriedades que se separam.</p>
+                            <button class="ler">Saiba mais</button>
+                        </div>
+                        <div class="destino">
+                            <h3>Baterias</h3>
+                            <img src="https://images.unsplash.com/photo-1608224873587-81ee37394b4e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <p class="desativado">As baterias de lítio-íon e outras recarregáveis devem ser descartadas individualmente, separado de todo o restante.
+                            </p>
+                            <button class="ler">Saiba mais</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="impactos">
+            <h1>Impactos e melhorias</h1>
+            <div id="flex_conteudo">
+            <div id="conteudo_impacto" class="caixa hidden pagina">
+
+                <h1>Impactos</h1>
+                <p>O impacto econômico também é bem grande, o gerenciamento inadequado de resíduos vai requerer um gasto muito significativo com limpeza, remoção e a remediação de áreas contaminadas, o que representa literalmente gastar dinheiro com lixo. A perda de recursos também é significativa, há muitos materiais presentes no lixo, como metais, plásticos e papel, esses são recursos valiosos que podem ser reutilizados, esse descarte inadequado é o mesmo que desperdiçar esse recurso.
+                    Diante desses impactos é importante adotar práticas mais conscientes, desde o consumo até o descarte. Dessa forma, podemos promover ainda mais projetos para remediar as áreas contaminadas. A implementação de gestão de resíduos vai acontecendo com o tempo, dessa forma, os efeitos negativos no lixo do mundo serão mitigados. 
+                </p>
+
+            </div>
+            <div id="conteudo_melhorias" class="caixa hidden pagina">
+                <h1>Melhorias</h1>
+                <p>A reciclagem traz melhorias significativas em várias áreas. Ela conserva recursos naturais ao reduzir a necessidade de extração de matérias-primas não sustentáveis e preserva ecossistemas. Diminui a poluição e o impacto ambiental ao reduzir a sobrecarga em aterros sanitários e a necessidade de incineração, melhorando a qualidade do ar. Economiza energia, como no caso do alumínio, cuja reciclagem consome até 95% menos energia do que a produção a partir do minério. Reduz as emissões de gases de efeito estufa associadas à produção e transporte de novos materiais. Promove a economia circular, reintegrando materiais na cadeia produtiva e diminuindo a dependência de recursos finitos. Cria novas oportunidades de emprego em diversas etapas do processo de reciclagem. Assim, a reciclagem melhora a qualidade de vida, gera empregos dignos, e apoia a economia e a infraestrutura. O único ponto negativo é que não recebe a devida valorização em comparação com outros temas atuais.
+                </p>
+            </div>
+        
+        </div>
+
+        </section>
+        
+
+
+    </main>
+
+    <div id="referencias"> 
+        <h1>referências</h1>
+
+        <a href="https://www.todamateria.com.br/reciclagem" target="_blank">todamateria.com.br/reciclagem</a>
+
+        <a href="https://mundoeducacao.uol.com.br/geografia/reciclagem" target="_blank">mundoeducacao.uol.com.br/geografia/reciclagem</a>
+
+        <a href="https://brasilescola.uol.com.br/biologia/reciclagem" target="_blank">brasilescola.uol.com.br/biologia/reciclagem</a>
+
+    <a href="https://greeneletron.org.br/blog/como-e-feita-a-reciclagem-de-aparelhos-eletroeletronicos" target="_blank">greeneletron.org.br/blog/como-e-feita-a-reciclagem-de-aparelhos-eletroeletronicos</a>
+    <a href="https://www.ecycle.com.br/reciclagem-de-eletronicos/" target="_blank">ecycle.com.br/reciclagem-de-eletronicos/</a>
+    <a href="https://greeneletron.org.br/blog/tudo-o-que-voce-precisa-saber-sobre-o-lixo-eletronico" target="_blank">greeneletron.org.br/blog/tudo-o-que-voce-precisa-saber-sobre-o-lixo-eletronico</a>
+        
+    <a href="https://www.scielo.br/j/sn/a/q3QftHsxztCjbWxKmGBcmSy
+    " target="_blank">
+        scielo.br/j/sn/a/q3QftHsxztCjbWxKmGBcmSy
+        
+    </a>
+        <a href="https://ambscience.com/o-lixo-e-seu-impacto-ambiental" target="_blank">ambscience.com/o-lixo-e-seu-impacto-ambiental</a>
+
+    <a href="https://vinhedoscuiaba.com.br/blog/impactos-ambientais-causados-pelo-lixo-como-diminuir" target="_blank">vinhedoscuiaba.com.br/blog/impactos-ambientais-causados-pelo-lixo-como-diminuir</a>
+</div>
+    
+
+    
+
+    <footer>
+        <section id="contato">
+                <h1>Contato</h1>
+    
+            <div id="logo_final">
+                <img src="imgs/Senac_logo 1.svg" alt="Logo senac">
+            </div>
+           <div id="info">
+                <div id="telefone">
+                    <i class="fa-solid fa-phone"></i>
+                   <p>Telefone <br> (44) 3218-5100</p>
+                </div>
+                <div id="endereco">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Avenida Colombo, 6225 <br> Maringá - PR</p>
+                </div>
+           </div>
+
+           <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.3499228934625!2d-51.94299207467451!3d-23.411723478902985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd6d3fcba7427%3A0x92a4207f682ee56f!2sFaculdade%20Senac%20Maring%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1717809013244!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+
+    </section>
+
+    </footer>
+
+
+    
+
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
+</body>
+</html>

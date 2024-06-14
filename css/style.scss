@@ -1,0 +1,987 @@
+//estilo Geral  ^^^^^^^^^^^^
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+:root{
+    --white :  white;
+    --verdeClaro:#838679;
+    --verdeEscuro: #1B251C;
+    --img:imgs/lixeira_papel.svg;
+}
+
+
+body{background: var(--verdeEscuro);
+    height: 400vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+h1{     font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
+a{
+    text-decoration: none;
+}
+
+ul{list-style: none;}
+
+
+
+
+
+
+//header
+
+header{
+z-index: 3;
+width: 100%;
+position: fixed;
+top: 0;
+
+    #container-header{
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.664);
+    backdrop-filter: blur(10px);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 0px 7px black;
+
+   #logo{
+    width: 200px;
+    margin-top: -10px;
+    object-fit: cover;
+
+
+    img{width: 80%;}
+   }
+
+        #container-nav{
+
+            ul{
+               margin-top: 10px; 
+                display: flex;
+                gap: 40px;
+                text-align: center;
+
+                    &:hover a:not(:hover){
+                        opacity: 0.3;
+                        filter: blur(2px);
+                    }
+                    li{list-style: none;
+                    
+
+                            a{text-decoration: none;
+                            color: var(--white);
+                            transition: 0.2s;
+                            font-size: 1.2rem;
+                             &:hover{color: white;
+                                text-shadow: 0px 0px 5px white;
+                            }
+
+                            
+                            }
+                    }
+            }
+        }
+    }
+}
+
+
+//Menu
+
+.hamburger {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.664);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    z-index: 4;
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+  }
+  
+  .hamburger input {
+    display: none;
+  }
+  
+  .hamburger svg {
+
+    height: 3em;
+
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+
+
+  //conteudo principal
+
+main{
+    width: 100%;
+    height: auto;
+
+
+    //section inicio
+
+    #inicio{
+        width: 100%;
+        min-height: 110lvh;
+        background:url(../imgs/FundoInicial.jpg) ;
+        background-size: cover;
+        padding:0 3rem ;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        justify-content: space-between;
+        animation: backgroundInicio linear;
+        animation-timeline: view();
+
+        #container-img{
+            img{
+            -webkit-filter: drop-shadow(0px 0px 10px black);
+            }
+        }
+    
+
+        #container-inicio{
+            border-radius: 10px;
+            width: 50rem;
+            min-width: 22rem;
+            min-height:33rem;
+            background: rgba(255, 255, 255, 0.082);
+            backdrop-filter: blur(8px);
+            text-align: center;
+            padding: 2rem 1rem;
+            color: rgb(207, 206, 206);
+            box-shadow: 0px 0px 10px black;
+            h1{font-size: 3rem !important;
+                border-bottom: 3px solid var(--white);
+                letter-spacing: 5px;
+            }
+            h1,h3{
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+            p{
+                margin-top: 80px;
+                font-size: 1.5rem;
+                letter-spacing: 0px;
+                text-align: left;
+                line-height: 40px;
+
+             
+            }
+        }
+    }
+
+//section sobre
+
+    #sobre{
+        padding: 6rem 3rem;
+        width: 100%;
+        min-height: 110lvh;
+        text-align: center;
+        color: var(--white);
+       & > h1{
+            font-size: 5rem;
+        }
+        #container-sobre{         
+            margin-top: 200px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+
+            #sobre-text{min-width: 500px;
+                max-width: 880px;
+                h1{font-size: 3rem;
+                margin-bottom: 15px;}
+                p{font-size: 1.5rem;
+
+            line-height: 40px;}
+            }
+
+            #sobre-img{width: 50%;
+                animation: imagens linear;
+                animation-timeline: view();
+                animation-range: 0 500px;
+                img{object-fit: contain;}
+            }
+        }
+
+        
+    }
+
+
+    //section reciclagem
+
+    #reciclagem{
+
+        background: url(../imgs/lixeiras_1.svg);
+        background-size: cover;
+        background-position: center left;
+        background-attachment: fixed;
+        width: 100%;
+        height: auto;
+        padding: 6rem 3rem;
+
+      & > h1{
+        font-size: 5rem;
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+        }
+
+        & > p{
+            margin: auto;
+            font-size: 1.4rem;
+            width: 1000px;
+            color: white;
+        }
+
+        #container-reciclagem{
+            width: 100%;
+            min-height: 90dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+                #container-imgs{
+                    border-radius: 10px;
+                    width: 1200px;
+                    height: 650px;
+                    display: flex;
+                    gap: 10px;
+                position: absolute;
+
+                    .conteudo-img{
+                        flex: 1;
+                        width: 300px;
+                        height: 100%;
+                        transition: 1s;
+                        &:hover{
+                            flex: 5;
+
+                        }
+                    
+
+                        .img-reciclagem{
+                            
+                            width: 100%;
+                            height: 100%;
+                            background-color: white;
+                            border-radius: 10px;
+                           position: relative;
+                            cursor: pointer;
+                           &:hover > .conteudo-reciclagem{
+                            opacity: 1;
+                            transition:opacity 3.5s,background-color 0.5s;
+                            backdrop-filter: blur(10px);
+                            p{display: inline;}
+                           
+
+                        }
+                           
+
+                           .conteudo-reciclagem{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            padding: 2rem 3rem;
+                            color: black;
+                            opacity: 0;
+                            transition:opacity 0s ease ,background-color 0.5s;
+                            background-color: rgba(240, 240, 240, 0.747);
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            h1{
+                                font-size: 3rem;
+                                margin-bottom: 20px;
+                                text-transform: uppercase;
+                                
+                            }
+
+                            h2{margin-bottom: 10px;
+                                font-size: 2rem;
+                                text-transform: uppercase;
+                            
+                                span{
+
+                                    color: var(--lixeira_cor);
+                                    font-size: 2rem;
+                                    -webkit-text-stroke-width: 1px;
+                                     -webkit-text-stroke-color: black;
+                                    border-bottom: 2px solid var(--lixeira_cor);
+                                }
+                            }
+
+                                p{
+                                    display: none;
+                                    font-size: 1.5rem;
+                                    
+                                }
+                                .reciclavel{
+                                    span{color: var(--reciclavel);
+                                        -webkit-text-stroke-width: 1px;
+                                        -webkit-text-stroke-color: black;}
+
+                                }
+
+                                .nao_reciclavel{
+                                    span{color: var(--nao_reciclavel);
+                                        -webkit-text-stroke-width: 1px;
+                                        -webkit-text-stroke-color: black;}
+                                }
+
+
+                           }
+
+                           
+    
+                           
+                        
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                               
+                                    }
+                           
+                        }
+                    }
+                }
+    
+    }
+
+    #container_outros_lixos{
+        text-align: center;
+        width: 100%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.527);
+        backdrop-filter: blur(10px);
+        padding: 2rem 3rem;
+        border-radius: 10px;
+
+        box-shadow: 0px 0px 10px black;
+        
+        h3{font-size: 2.5rem;
+            margin-bottom: 20px;
+       }
+
+        &> p {
+            margin-bottom: 20px;
+            font-size: 1.7rem;
+        }
+
+        #outros_lixos{
+            display: flex;
+           flex-wrap: wrap;
+            text-align: left;
+            justify-content: center;
+            gap: 30px;
+           
+            p{font-size: 1.2rem;
+                border: 2px solid white;
+                border-radius: 8px;
+            padding: 10px;
+            line-height: 30px;
+           width: 500px;
+           height: 200px;
+           transition: 0.5s;
+                &:hover{scale: 1.1;
+                background: white;
+                color: black;}
+
+        span{color: var(--outros_lixos);
+            font-size: 2rem;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+       }
+              
+    }
+
+        
+
+        
+            
+
+            
+        }
+
+
+    }
+    }
+
+    //section destino
+
+    #destino{
+        width: 100%;
+        padding: 6rem 3rem 0rem 3rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        
+
+        & > h1{
+            font-size: 5rem;
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            }
+
+            #conteudo_destino{
+                width: 80%;
+                margin: 0 auto;
+                color: whitesmoke;
+
+                #conteudo_destino_primeiro{ 
+                    display: flex;
+                    p{
+                    
+                    font-size: 1.5rem;
+
+                    }
+                        #lado_esquerdo_destino{
+                            p{line-height: 35px;}
+                           
+                        img{width: 400px;
+                                height: 400px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                                
+                            float: right;}
+
+                        }
+                 
+                            
+                       
+                    }
+
+                    #conteudo_destino_segundo{
+                        padding: 5rem;
+                        width: 100%;
+                        & > h1{text-align: center;
+                        font-size: 2.5rem;
+                    margin: 50px 0;}
+
+                    h3{font-size: 1.5rem;
+                    margin-bottom: 10px;
+                    }
+                    p{font-size: 1.5rem;}
+
+                    #lado_direito_destino{
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 50px;
+                        .destino{width: 450px;
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 50px;
+                            position: relative;
+                            text-align: center;
+                           
+
+                            img{width: 100%;
+                            height: 200px;
+                        object-fit: cover;
+                    border-radius: 20px;
+                box-shadow: 0px 0px 10px black;}
+
+
+                            
+
+                            p{margin-top:20px;
+}
+
+                            .desativado{height:0;
+                            overflow: hidden;
+                            transition: 0.5s;}
+
+                            .ativado{height: 260px;
+                            transition: 0.5s;
+                            }
+
+                            button{background: #838679;
+                                padding: 10px 20px;
+                                border-radius: 10px;
+                                 margin-top: 20px;
+                                border: none;
+                                color: white;
+                                cursor: pointer;
+                                transition: 0.5s;
+
+                                &:hover{color: black;
+                                background-color: white;}
+                            }
+                         }
+                    }
+
+
+                    }
+            
+                }
+               
+            }
+
+
+//section impactos
+
+
+            #impactos{
+                color: white;
+                background: #18331a;
+                width: 100%;
+                padding: 6rem 3rem;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                &>h1{font-size: 3rem;
+                margin-bottom: 50px;}
+                
+
+                #flex_conteudo{
+                    display: flex;
+                    justify-content: center;
+                    gap: 50px;
+
+
+                    p{font-size: 1.2rem;
+                    line-height: 25px;}
+
+                    h1{font-size: 1.7rem;
+                    margin-bottom: 20px;}
+
+                    .caixa{border: 1px solid black; //bloco de conteudo
+                    padding: 1rem 2rem;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    width: 700px;
+
+                    &:hover{scale: 1.1;
+                    background: whitesmoke;
+                    color: black;
+                }
+                }
+
+
+                }
+
+
+            }
+
+            //referencias
+
+
+        
+    }
+
+    #referencias{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+padding: 6rem 1rem;
+        color: white;
+        width: 100%;
+
+        h1{font-size: 3rem;}
+
+    
+
+    a{text-decoration: none;
+    color: white;
+font-size: 1.1rem;
+
+&:hover{color: green;
+transition: 0.2s;}
+
+}
+
+
+        
+        
+
+      
+    }
+
+
+    
+
+
+//section finall footer
+
+    footer{
+        width: 100%;
+       text-align: center  ;
+       padding: 6rem 3rem;
+       color: white;
+       #contato{
+         &>h1{margin-bottom: 50px;
+        font-size: 3rem;}
+
+        #info{display: flex;
+        justify-content: center;
+        gap: 50px;
+    margin: 50px 0;
+
+    i{font-size: 2.5rem;
+    margin-bottom: 10px;
+color: forestgreen;}
+    p{line-height: 30px;
+    font-size: 1.2rem;}
+}
+       }
+
+      
+    }
+
+
+
+.hidden{
+    transform: translateX(-50px);
+opacity: 0;
+transition: 2s;
+filter: blur(10px);
+}
+
+.show{
+    transform: translateX(0px);
+opacity: 1;
+transition: 2s;
+filter: blur(0px);
+}
+
+
+
+
+
+.imgClick{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    z-index: 2s;
+
+
+}
+
+
+
+@keyframes backgroundInicio{
+    from{
+        background-size: 2200px;
+    }
+
+    to{
+        background-size: 2500px;
+    }
+}
+
+
+@media (max-width:1250px){
+
+    #inicio{
+        overflow: hidden;
+        padding: 2rem 1rem !important;
+        flex-direction: column;
+        #container-inicio{
+            width: 100% !important;
+            max-width: 40rem !important;
+            min-width: 23rem !important;
+            min-height:33rem;
+            padding: 0;
+        }
+    }
+
+
+
+    #sobre{
+        padding: 5rem 1rem !important;
+        text-align: center;
+
+        #container-sobre{flex-direction: column;
+            margin-top: 50px !important;
+        align-items: flex-start !important;
+        
+        
+        #sobre-text{
+            margin: auto !important;
+            min-width: 200px !important;
+            h1{font-size: 3rem;
+            margin-bottom: 35px !important;  }
+            p{font-size: 1.2rem;
+            letter-spacing: 2px;
+        line-height: 40px;}
+        }
+        
+        #sobre-img{
+            margin: auto;
+            width: 350px !important;
+            margin-top: 50px;
+            img{object-fit: contain;
+                width: 100%;
+        }
+        }
+        }
+    }
+
+    #reciclagem{
+
+        padding: 5rem 1rem !important;
+        justify-content: flex-start !important;
+            & > h1{
+                width: auto !important;
+                font-size: 3.3rem !important;
+                margin: auto  !important;
+                }
+                & > p{
+                    font-size: 1.4rem !important;
+                    color: white;
+                    width: 100% !important;
+                    text-align: center !important;
+                 
+                }
+
+                #container-reciclagem{
+                    margin-top: 100px;
+                    flex-direction: column !important;
+                }
+
+                #container-imgs{
+                    height: 800px !important;
+                    width: 310px !important   ;
+                    flex-direction: column;
+    
+                }
+
+                
+                .img-reciclagem{
+                
+                
+                          
+
+                    p{display: inline;}
+
+
+                    .conteudo-reciclagem{
+                        border-radius: 10px;
+                        gap: 10px !important;
+                        overflow-y: scroll;
+
+                        h1{font-size: 2rem !important;}
+
+                        h2{font-size: 1.3rem !important;}
+
+                        p{font-size: 1.3rem !important;
+                        }
+                    }
+                   
+
+                }
+
+                #container_outros_lixos{
+                    margin-top: 100px;
+                    padding: 2rem 1rem !important;
+
+                    #outros_lixos{
+                        p{
+                            height: 320px !important;
+
+                            &:hover{scale: 1 !important;}
+                        }
+                    }
+                }
+
+        
+    }
+
+    #destino{
+        padding: 5rem 1rem !important;
+        justify-content: center !important;
+
+        & > h1{
+          
+            font-size: 3rem !important;
+            width: 350px !important;
+
+            }
+
+        
+    }
+
+    #conteudo_destino{
+        width: 100% !important;
+        justify-content: center;
+
+        #conteudo_destino_primeiro{ 
+
+                #lado_esquerdo_destino{
+
+                    p{font-size: 1.3rem !important;}
+                
+                   margin: auto !important;
+                img{width: 360px !important;
+                        height: 360px !important;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        float: right;
+                        
+                  }
+
+                }
+         
+                    
+               
+            }
+
+
+            #conteudo_destino_segundo{
+                padding:0 !important;
+
+                .ativado{height: 360px !important;
+                    }
+
+
+        }
+
+        }
+
+
+
+
+        #impactos{
+padding: 5rem 1rem !important;
+            #flex_conteudo{
+            flex-direction: column !important;
+
+            .caixa{border: 1px solid black;
+                padding: 1rem 2rem;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.5s;
+                width: 100% !important;
+
+                &:hover{scale: 1 !important;}
+
+                p{font-size: 1.3rem !important;}
+
+            }
+        }
+        }
+
+
+
+        footer{
+            padding: 5rem 1rem !important;
+        #contato{
+            
+#info{flex-direction: column !important;}
+
+            #telefone{
+                 p{font-size: 1.2rem !important;}  
+            }
+           
+            img{width: 200px !important;}
+
+            iframe{width: 350px !important;}
+        }
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+@media (max-width:1440px){
+
+
+.hamburger{display: block !important;}
+
+    .header_ativo{
+        transition: 0.5s;
+        width: 100%;
+    }
+
+
+
+header{
+    transition: 0.5s;
+    overflow: hidden;
+    width: 0px;
+    right: 0;
+}
+
+#container-header{height:110vh;
+    gap: 40px;
+    justify-content: center !important;
+flex-direction: column;
+
+#logo{width: 300px !important;}
+}
+
+#container-nav{
+    ul{flex-direction: column;
+
+        li{
+            a{font-size: 1.5rem !important;}
+        }
+    }
+}
+
+
+ .menu_ativo{
+   display: flex;
+}
+
+
+}
