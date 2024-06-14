@@ -10,7 +10,7 @@ const menu = document.querySelector("#hamburger")
 
 const ler = document.querySelectorAll(".ler")
 
-const ancoras = document.querySelectorAll('a')
+const ancoras = document.querySelectorAll('#nav a')
 
 window.addEventListener('resize' , ()=>{
 
