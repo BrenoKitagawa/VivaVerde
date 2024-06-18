@@ -8,7 +8,7 @@
 :root {
   --white: white;
   --verdeClaro:#838679;
-  --verdeEscuro: #1B251C;
+  --verdeEscuro: #122214;
   --img:imgs/lixeira_papel.svg;
 }
 
@@ -215,9 +215,10 @@ main #sobre #container-sobre #sobre-img img {
      object-fit: contain;
 }
 main #reciclagem {
-  background: url(../imgs/lixeiras_1.svg);
+  background: url(../imgs/lixeiras.svg);
   background-size: cover;
   background-position: center left;
+  background-size: 2300px 3000px;
   background-attachment: fixed;
   width: 100%;
   height: auto;
@@ -271,7 +272,7 @@ main #reciclagem #container-reciclagem #container-imgs .conteudo-img .img-recicl
 }
 main #reciclagem #container-reciclagem #container-imgs .conteudo-img .img-reciclagem:hover > .conteudo-reciclagem {
   opacity: 1;
-  transition: opacity 3.5s, background-color 0.5s;
+  transition: opacity 3.5s;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }

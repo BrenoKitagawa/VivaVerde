@@ -1,6 +1,5 @@
 const inicio= document.getElementById('inicio')
 
-// const header = document.getElementById("container-header")
 
 const header = document.getElementById("header")
 
@@ -44,6 +43,8 @@ ler.forEach(item=>{
 
     item.addEventListener('click',(e)=>{
 
+        
+
         let parente = e.target.previousElementSibling;
 
         if(parente.classList.contains('ativado')){
@@ -56,24 +57,6 @@ ler.forEach(item=>{
     })
 })
 
-// inicio.addEventListener("click",(e)=>{
-//     e.preventDefault()
-//     let mouseX=e.screenX
-//     let mouseY=e.screenY
-    
-//     let clickImg=document.createElement('img')
-//     clickImg.src="imgs/clickImg.png"
-//     clickImg.classList.add("imgClick")
-//     clickImg.style.left= `${mouseX-50}px`
-//     clickImg.style.top= `${mouseY-150}px`
-//     document.body.appendChild(clickImg)
-//     setTimeout(()=>{
-//         clickImg.remove()
-//     },5000)
-
-//     console.log(mouseX, mouseY)
-
-// })
 
 
 const pagina = document.querySelectorAll(".pagina")
