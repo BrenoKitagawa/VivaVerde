@@ -1,6 +1,5 @@
 const inicio= document.getElementById('inicio')
 
-
 const header = document.getElementById("header")
 
 const nav = document.getElementById("container-nav")
@@ -38,7 +37,6 @@ menu.addEventListener('click',(e)=>{
 })
 
 
-
 ler.forEach(item=>{
 
     item.addEventListener('click',(e)=>{
@@ -56,8 +54,6 @@ ler.forEach(item=>{
         }
     })
 })
-
-
 
 const pagina = document.querySelectorAll(".pagina")
 
